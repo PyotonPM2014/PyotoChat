@@ -1,5 +1,5 @@
 const ws = require('ws')
-const server = ws.Server({ port: 7000 })
+const server = new ws.Server({ port: 7000 })
 
 server.on('connection', function(client) {
 	console.log('Client connected')
